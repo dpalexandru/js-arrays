@@ -50,4 +50,19 @@ console.log(teachers);
 console.log(isFabioPresent)
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+let teachersString = 'Gli insegnanti sono: ';
+
+for (let i = 0; i < teachers.length; i++) {
+  teachersString += teachers[i];
+
+//aggiungo virgola e spazio e punto per l'ultimo. 
+  if (i < teachers.length - 1) {
+    teachersString += ', ';
+
+  }else {
+    teachersString += '.';
+
+  }
+}
+
+console.log(teachersString);
