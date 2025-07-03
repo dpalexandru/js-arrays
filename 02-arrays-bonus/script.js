@@ -26,9 +26,16 @@ for (let i = 0; i < teachers.length; i++ ) {
   }
 }
 
-console.log(longNames)
+console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
+//creo ciclo per trovare Ed nell'array e if per eliminarlo se trova corrispondenza 
+for (let i = 0; i < teachers.length; i++ ) {
+  if (teachers[i]== 'Ed'){
+    teachers.splice(i, 1);
+  }
+}
+console.log(teachers);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
